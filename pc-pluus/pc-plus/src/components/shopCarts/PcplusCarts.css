@@ -1,0 +1,152 @@
+.PcplusCarts-container {
+    background-color: #1a1a1a;
+    
+    border-radius: 12px;
+    padding: 15px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: IBM Plex Sans;
+}
+
+.PcplusCarts-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.pcplus-cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.store-name {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-icon {
+    color: #C2C2C2F5;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-icon:hover{
+    color: #fff;
+}
+
+.image-pcplusCart-container {
+    border-radius: 8px;
+    width: 253px;
+    height: 253px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-info {
+    padding: 12px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.add-to-cart-btn {
+    background-color: #B23636;
+    color: #CFCFCF;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #AF1E1E;
+}
+
+
+
+
+.menu-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dots-icon {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.dots-icon:hover {
+    color: #fff;
+}
+
+
+.dropdown-popup {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #1a1a1a; 
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 170px;
+    z-index: 50;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.dropdown-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdown-option:hover {
+    background-color: #252525;
+}
+
+.dropdown-option span {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.option-icon {
+    color: #888;
+    font-size: 14px;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: #333;
+}
+
+
+.add-to-cart-btn {
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.add-to-cart-btn:active {
+    transform: scale(0.98);
+}

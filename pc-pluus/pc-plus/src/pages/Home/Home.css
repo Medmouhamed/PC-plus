@@ -1,0 +1,33 @@
+
+.home-hero-page {
+    background-image: url('../../assets/hero-img.png');
+    background-size: cover;
+    background-position: center;
+    
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-family: 'sora', 'sans-serif';
+    font-weight: 200;
+}
+
+
+@media (max-width: 768px) {
+    .home-hero-page {
+        gap: 30px;
+        
+        background-position: 70% center;
+        
+        padding-bottom: 40px;
+        
+    }
+
+    .Home-container {
+        overflow-x: hidden;
+        
+    }
+}

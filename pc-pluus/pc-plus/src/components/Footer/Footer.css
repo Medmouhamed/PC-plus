@@ -1,0 +1,139 @@
+.Footer-container {
+    width: 100%;
+    padding: 40px 18px;
+    font-family: sora;
+    margin-top: 48px;
+}
+
+.Footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-content {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 45px;
+    margin-bottom: 30px;
+
+}
+
+.top-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.top-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 38px;
+
+}
+
+.links li {
+    padding: 12px;
+}
+
+.social-media-icons .social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 4px 8px;
+}
+
+.social-icon {
+    font-size: 36px;
+}
+
+.social-icon:hover {
+    color: #B92323;
+}
+
+.top-right-content li {
+    list-style: none;
+}
+
+.footer-desc {
+    max-width: 400px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.bottom-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.policy-container {
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .Footer-content {
+        margin: 0 20px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .top-left-content {
+        align-items: center;
+    }
+
+    .footer-desc {
+        max-width: 100%;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .top-right-content {
+        align-items: center;
+        gap: 25px;
+
+    }
+
+    .links ul {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .social-icon {
+        font-size: 28px;
+    }
+
+    .bottom-content {
+        gap: 15px;
+    }
+
+    .policy-container {
+        font-size: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .links ul {
+        flex-direction: column;
+        
+        gap: 10px;
+    }
+}

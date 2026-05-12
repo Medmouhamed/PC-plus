@@ -1,0 +1,89 @@
+.Shop-SideBar-container {
+    width: 250px;
+    background-color: transparent;
+    
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    border-right: 1px solid #1a1a1a;
+    font-family: IBM Plex Sans;
+
+}
+.sidebar-header {
+    display: flex;
+    justify-content: flex-end; 
+    margin-bottom: -10px;
+}
+
+.filter-icon {
+    color: #888;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter-title {
+    color: #FF4848; 
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filter-list li {
+    color: #888;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.filter-list li:hover {
+    color: #fff;
+}
+
+.filter-list li.active {
+    color: #fff; 
+}
+
+
+.brand-select-wrapper {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.brand-select {
+    width: 100%;
+    background: transparent;
+    color: #888;
+    border: none;
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+@media (min-width: 768px) {
+    .shop-sidebar {
+        position: sticky;
+        top: 20px;
+        height: fit-content;
+    }
+}

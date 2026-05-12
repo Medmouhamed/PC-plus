@@ -1,0 +1,171 @@
+.BuildPc-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../../assets/buildsection.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'sora';
+    padding: 0 10%;
+    margin-top: 70px;
+}
+
+.build-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.build-text-content {
+    max-width: 504px;
+}
+
+.build-title {
+    font-size: 48px;
+    color: #E8E8E8;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.red-label {
+    color: #810C0C;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.stat-box p {
+    color: #E8E8E8;
+    font-size: 22px;
+    margin: 5px 0 0 0;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 30px;
+    background-color: #810C0C;
+}
+
+.build-desc {
+    color: #B1B1B1;
+    font-size: 20px;
+    line-height: 41px;
+    margin-bottom: 40px;
+}
+
+.build-action-btn {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, #801C1C, #BA3333, #7F1A1A);
+    color: #E8E8E8;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(204, 34, 34, 0.3);
+}
+
+.build-action-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(204, 34, 34, 0.5);
+}
+
+.wrench-icon {
+    font-size: 20px;
+}
+
+
+@media (max-width: 992px) {
+    .BuildPc-container {
+        padding: 0 5%;
+    }
+
+    .build-title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .BuildPc-container {
+    
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/buildsection.png');
+        background-position: center;
+        justify-content: center;
+        
+        padding: 60px 20px;
+        min-height: auto;
+        
+    }
+
+    .build-container {
+        justify-content: center;
+        
+    }
+
+    .build-text-content {
+        text-align: center;
+        
+    }
+
+    .build-title {
+        font-size: 32px;
+    }
+
+    .stats-row {
+        justify-content: center;
+        
+        gap: 20px;
+    }
+
+    .stat-box p {
+        font-size: 18px;
+        
+    }
+
+    .red-label {
+        font-size: 20px;
+    }
+
+    .build-desc {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .build-action-btn {
+        max-width: 300px;
+        margin: 0 auto;
+       
+    }
+}
+
+@media (max-width: 480px) {
+    .build-title {
+        font-size: 28px;
+    }
+
+    .stats-row {
+        gap: 15px;
+    }
+
+    .vertical-line {
+        height: 20px;
+    }
+}

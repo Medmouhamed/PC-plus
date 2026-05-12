@@ -1,0 +1,62 @@
+.Navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 90px;
+    margin: 0 18px;
+}
+
+.logo-img {
+    width: auto;
+}
+
+.login-btns {
+    font-family: "IBM Plex Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-weight: 300;
+}
+
+.login-btns .sign-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #E8E8E8;
+    border: solid 2px #B24747;
+}
+
+.signup-btn {
+    background-color: #B24747;
+
+}
+
+
+
+@media (max-width: 992px) {
+    .Navbar-container {
+        padding: 12px 40px;
+      
+    }
+}
+
+
+@media (max-width: 580px) {
+    .Navbar-container {
+        padding: 10px 15px;
+      
+        margin: 0 5px;
+    }
+
+    .login-btns {
+        gap: 10px;
+    }
+
+    .login-btns .sign-btn {
+        padding: 6px 10px;
+     
+        font-size: 0.8rem;
+      
+        border-width: 1.5px;
+    }
+}

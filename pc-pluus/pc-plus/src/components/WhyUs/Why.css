@@ -1,0 +1,103 @@
+.why-us-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.551), rgba(0, 0, 0, 0.4)), url(../../assets/whyusjpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: sora, 'sans-serif';
+    padding: 60px 20px;
+}
+
+.why-us-all-info {
+
+    display: flex;
+    gap: 64px;
+
+}
+
+.cart-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.text-info h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.text-info h1 span {
+    color: #AC2424;
+}
+
+.text-info p {
+    font-weight: 300;
+    font-size: 24px;
+    padding: 4px 0px;
+    line-height: 45px;
+}
+
+.img-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 1024px) {
+    .why-us-all-info {
+        gap: 30px;
+        flex-direction: column;
+      
+        text-align: center;
+    }
+
+    .text-info h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-us-container {
+        min-height: auto;
+        padding: 40px 15px;
+    }
+
+    .text-info h1 {
+        font-size: 32px;
+    }
+
+    .text-info p {
+        font-size: 18px;
+        line-height: 1.5;
+
+        br {
+            display: none;
+        }
+
+       
+    }
+
+    .cart-info {
+        width: 100%;
+        gap: 20px;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    .text-info h1 {
+        font-size: 28px;
+    }
+
+    .text-info p {
+        font-size: 16px;
+    }
+}
